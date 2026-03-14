@@ -432,6 +432,45 @@ p {
     color: var(--charcoal);
 }
 
+.weekend-events {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.events-label {
+    font-weight: 600;
+    color: var(--coral);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.events-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.events-list li {
+    padding: 0.4rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    color: var(--charcoal);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.events-list li:before {
+    content: '🎭';
+    position: absolute;
+    left: 0;
+    font-size: 0.85rem;
+}
+
 .weekend-card .btn {
     width: 100%;
     margin-top: 1rem;

@@ -70,13 +70,30 @@ function createWeekendCard(weekend) {
     const card = document.createElement('div');
     const isAvailable = weekend.status === 'Available';
     
+    // Get events for this weekend
+    const events = typeof getEventsForWeekend === 'function' ? getEventsForWeekend(weekend.id) : [];
+    const hasEvents = events && events.length > 0;
+    
     card.className = `weekend-card ${isAvailable ? 'available' : 'taken'}`;
+    
+    let eventsHtml = '';
+    if (hasEvents) {
+        eventsHtml = `
+            <div class="weekend-events">
+                <div class="events-label">What's Happening:</div>
+                <ul class="events-list">
+                    ${events.map(event => `<li>${event}</li>`).join('')}
+                </ul>
+            </div>
+        `;
+    }
     
     card.innerHTML = `
         <div class="weekend-date">${weekend.label}</div>
         <div class="weekend-status ${isAvailable ? 'available' : 'taken'}">
             ${isAvailable ? '✓ Available' : '✗ Reserved'}
         </div>
+        ${eventsHtml}
         ${isAvailable ? `
             <button class="btn btn-primary reserve-btn" data-weekend-id="${weekend.id}" data-weekend-label="${weekend.label}">
                 Reserve This Weekend
