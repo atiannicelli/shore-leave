@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule · Yūnagi Cottage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="kanji">夕凪</span>
+                <span class="brand-text">Yūnagi Cottage</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html" class="active">Schedule</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <div class="page-header">
+            <h1>Weekend Schedule</h1>
+            <p class="subtitle">May – September 2026</p>
+            <div class="wave-divider"></div>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading availability...</p>
+        </div>
+
+        <div id="error-message" class="error-banner" style="display: none;"></div>
+
+        <div id="weekends-grid" class="weekends-grid">
+            <!-- Weekend cards will be populated by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Reservation Modal -->
+    <div id="reservation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Reserve Weekend</h2>
+            <p id="modal-weekend-label" class="modal-weekend-label"></p>
+            
+            <form id="reservation-form">
+                <input type="hidden" id="weekend-id" name="weekendId">
+                
+                <div class="form-group">
+                    <label for="guest-name">Your Name *</label>
+                    <input type="text" id="guest-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guest-email">Email *</label>
+                    <input type="email" id="guest-email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guest-count">Number of Guests *</label>
+                    <input type="number" id="guest-count" name="guests" min="1" max="12" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Reservation Password *</label>
+                    <input type="password" id="password" name="password" required>
+                    <small>Enter the password provided by the cottage owner</small>
+                </div>
+                
+                <div id="form-error" class="form-error" style="display: none;"></div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-btn">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">
+                        <span class="btn-text">Confirm Reservation</span>
+                        <span class="btn-spinner" style="display: none;"></span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="kanji">夕凪</span>
+                    <span>Yūnagi Cottage</span>
+                </div>
+                <div class="footer-location">
+                    Bailey Island, Maine
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/schedule.js"></script>
+</body>
+</html>
