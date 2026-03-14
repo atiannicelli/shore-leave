@@ -376,10 +376,13 @@ p {
 
 /* ========== Weekends Grid ========== */
 .weekends-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .weekend-card {
@@ -389,6 +392,17 @@ p {
     box-shadow: 0 4px 15px var(--shadow);
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    display: grid;
+    grid-template-columns: 250px 1fr auto;
+    gap: 2rem;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .weekend-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
 .weekend-card:hover {
@@ -410,7 +424,7 @@ p {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--charcoal);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .weekend-status {
@@ -419,7 +433,8 @@ p {
     border-radius: 25px;
     font-weight: 600;
     font-size: 0.9rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    width: fit-content;
 }
 
 .weekend-status.available {
@@ -436,7 +451,7 @@ p {
     background: #f8f9fa;
     border-radius: 8px;
     padding: 1rem;
-    margin: 1rem 0;
+    margin: 0;
     text-align: left;
 }
 
@@ -472,8 +487,15 @@ p {
 }
 
 .weekend-card .btn {
-    width: 100%;
-    margin-top: 1rem;
+    width: 200px;
+    margin-top: 0;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .weekend-card .btn {
+        width: 100%;
+    }
 }
 
 .weekend-card.taken .btn {

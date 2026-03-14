@@ -89,11 +89,13 @@ function createWeekendCard(weekend) {
     }
     
     card.innerHTML = `
-        <div class="weekend-date">${weekend.label}</div>
-        <div class="weekend-status ${isAvailable ? 'available' : 'taken'}">
-            ${isAvailable ? '✓ Available' : '✗ Reserved'}
+        <div class="weekend-info">
+            <div class="weekend-date">${weekend.label}</div>
+            <div class="weekend-status ${isAvailable ? 'available' : 'taken'}">
+                ${isAvailable ? '✓ Available' : '✗ Reserved'}
+            </div>
         </div>
-        ${eventsHtml}
+        ${hasEvents ? eventsHtml : '<div></div>'}
         ${isAvailable ? `
             <button class="btn btn-primary reserve-btn" data-weekend-id="${weekend.id}" data-weekend-label="${weekend.label}">
                 Reserve This Weekend
