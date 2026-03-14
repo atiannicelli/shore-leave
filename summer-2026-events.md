@@ -43,11 +43,9 @@ Events in Harpswell, Brunswick, Portland, and surrounding Midcoast Maine.
 
 ### Weekend of July 10-12
 - **1776** @ Maine State Music Theatre (final weekend), Brunswick
-- **Maine International Film Festival** (July 10-19), Waterville
 
 ### Weekend of July 17-19
 - **Frozen** @ Maine State Music Theatre (July 15 - Aug 1), Brunswick
-- **Maine International Film Festival** (continues), Waterville
 - **Yarmouth Clam Festival** (3rd weekend in July), Yarmouth - July 18-20 - FREE!
 
 ### Weekend of July 24-26
@@ -62,7 +60,6 @@ Events in Harpswell, Brunswick, Portland, and surrounding Midcoast Maine.
 
 ### Weekend of August 7-9
 - **Come From Away** @ Maine State Music Theatre (Aug 5-22), Brunswick
-- **Guster On The Ocean Festival** (Aug 7-9), Portland (Merrill Auditorium & Thompson's Point)
 
 ### Weekend of August 14-16
 - **Come From Away** @ Maine State Music Theatre (continues), Brunswick
