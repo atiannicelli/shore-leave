@@ -2,7 +2,7 @@
 
 // ========== Configuration ==========
 // IMPORTANT: Replace this URL with your deployed Google Apps Script web app URL
-const API_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+const API_URL = 'https://script.google.com/macros/s/AKfycbxfJx7sL2ivA6ddTcaczO30IzqPwsv4CZUlu4uCOxsy1P5QVYspaCfiJT27GNso3ANr/exec';
 
 // ========== DOM Elements ==========
 const loadingEl = document.getElementById('loading');
