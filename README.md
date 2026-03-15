@@ -1,10 +1,10 @@
-# 夕凪 Shore Leave
+# Shore Leave
 
 A beautiful booking website for a coastal cottage on Bailey Island, Maine.
 
 ## What This Is
 
-**Shore Leave** (夕凪) means "evening calm" in Japanese — the peaceful stillness along the coast at sunset. This website lets friends and family reserve weekend getaways at a private cottage, with a password-protected booking system backed by Google Sheets.
+**Shore Leave** — the peaceful stillness along the coast at sunset. This website lets friends and family reserve weekend getaways at a private cottage, with a password-protected booking system backed by Google Sheets.
 
 ## Features
 
