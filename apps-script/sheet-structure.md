@@ -1,4 +1,4 @@
-# Google Sheet Structure for Yūnagi Cottage
+# Google Sheet Structure for Shore leave
 
 This document explains how to set up your Google Sheet to work with the booking system.
 
